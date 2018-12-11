@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cars</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</script>
+</head>
+<body>
+
+	<div class="navbar">
+		<ul>
+			<li><button class="btn" data-page="index">Home</button></li>
+			<li><button class="btn" data-page="addcar">Add Car</button></li>
+			<li><button class="btn" data-page="addmanufacturer" >Add Manufacturers</button></li>
+			<li><button class="btn" data-page="carlist">Car list</button></li>
+			<li><button class="btn" data-page="manufacturerlist">Manufacturer list</button></li>
+		</ul>
+	</div>
+	<div class="container">
+		<div id="content">
+				<h1>Select a manufacturer to get its cars</h1>
+				<form id="carsOfmanufacturer" onsubmit="getCarsOfManufacturer(event)">
+					<select class="manufactureSelect" name="manufacturer">
+
+					</select>
+					<button type="submit" class="btn">Get</button>
+				</form>
+				<div id="carsTable"> </div>
+		</div>
+	</div>
+</body>
+</html>

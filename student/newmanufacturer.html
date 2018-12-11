@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+	<div class="form" id="manufacturerContainer">
+		<h1>Add new manufacturer:</h1>
+		<div class="alert"></div>
+	 <form action='/addManufacturers' method='POST' id="manufacturerform" onsubmit="newManufacturer(event)">
+		 <ul>
+			<label for="name">Name:</label>
+			<input type="text" name="name" required>
+
+			<label for="country">Country:</label>
+			<input type="text" name="country" required>
+
+			<label for="founded">Founded:</label>
+			<input type="date" name="founded" required>
+			<button type="submit" name="submit" class="btn">Add</button>
+	 </form>
+	</div>
+
+</html>
